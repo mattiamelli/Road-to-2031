@@ -1,8 +1,21 @@
-def valore_medio (somma_voti, numero_voti):
-    print(f"Il valore medio dei voti è pari alla somma dei tuoi voti diviso il numero di voti, ovvero {somma_voti}/{numero_voti}")
-    return somma_voti7numero_voti
+def operazione(n1, n2, segno):
+    if segno == '+':
+        ris = n1 + n2
+        return ris
+    elif segno == '-':
+        ris = n1 - n2
+        return ris 
+    elif segno == '*':
+            ris = n1 * n2
+            return ris 
+    elif segno == '/':
+            ris = n1 / n2
+            return ris 
+
 def main():
-    somma_voti = int(input("Inserisci la somma dei tuoi voti, "))
-    numero_voti = int(input("Inserisci il numero dei tuoi voti, "))
-    print(f"Il valore medio dei voti è pari alla somma dei tuoi voti diviso il numero di voti, ovvero {somma_voti}/{numero_voti}")
+    n1 = float(input("Inserire il primo numero:"))
+    n2 = float(input("Inserire il secondo numero:"))
+    segno =str(input("Inserire il segno dell'operazione:"))
+    ris = operazione(n1, n2, segno)
+    print(f"Il risultato finale è: {ris}")
 main()
